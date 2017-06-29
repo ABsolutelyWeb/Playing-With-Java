@@ -1,1 +1,1 @@
-Full of random Java code.
+I got bored so I randomly played around with Java.
