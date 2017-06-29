@@ -20,3 +20,20 @@ public class HelloWorld {
         }
     }
 }
+
+/*
+    OUTPUT:
+        Hello there for the 1st time, world!
+        Hello there for the 2nd time, world!
+        Hello there for the 3rd time, world!
+        Hello there for the 4th time, world!
+        Hello there for the 5th time, world!
+        Hello there for the 6th time, world!
+        Hello there for the 7th time, world!
+        Hello there for the 8th time, world!
+        Hello there for the 9th time, world!
+        Hello there for the 10th time, world!
+
+Process finished with exit code 0
+
+ */
