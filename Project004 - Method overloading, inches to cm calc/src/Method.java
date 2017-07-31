@@ -1,4 +1,4 @@
-public class method {
+public class Method {
     public static void main(String args[]) {
         double ans = inchesToCent(1, 1);
         System.out.println(ans);
