@@ -1,0 +1,76 @@
+What happens when we click the "run" button on an IDE in order to run a Java program?
+
+	- Interpreter tries to find the main method which it will run.
+	- There are two memory locations that are reserved for java program: heap and stack
+	  which are located in RAM.
+		
+		1. Stack
+			- When we hit the "run" button, the first method invocation is main and a 
+			  frame will be created. A frame is a memory area inside of the stack. This
+			  frame will belong to the main method. All variables inside main are local 
+			  variables.
+			  
+			- When the interpreter is running along the main method and finds a local
+			  variable declaration, what will happen in the main frame is that a specific
+			  reservation will be made for that variable. This reservation will be called
+			  whatever the variable name is.
+			  
+			- When interpreter finds a function that it needs to run, the function will be 
+			  added to the stack. It will be piled on top of main. That function might have
+			  its own local variables that have their own reservations within that function's
+			  memory frame.
+			  
+			- If a function is called within another function, that called function will have 
+			  an allocated frame in stack, but once it has completed the work, the frame will 
+			  be popped.
+			  
+			- Every time a function or method has completed its work, it is popped from the
+			  stack. Once main has completed running, it will also be popped from stack and
+			  the program will end and memory will be cleared.
+			  
+		
+		2. Heap
+			- Assume we are running along the main method and find something like Animal myAnimal.
+			  This is an object of type Animal referenced as "myAnimal." This reference variable
+			  belongs inside main. This reference variable points to where the actual object resides
+			  in memory. So if we do myAnimal = new Animal(), we are creating an object that resides 
+			  in heap memory.
+			  
+			- myAnimal variable now points to the location in memory where this Animal object is stored
+			  in the heap. In other words, the memory address to where the Animal object lies in the heap
+			  is assigned to the myAnimal variable. Keep in mind that the myAnimal variable itself resides
+			  in the stack memory within the main frame.
+			  
+			- When we change a primitive variable's value in the stack, that value changes. The variable 
+			  containing that value actually contains the data. In contrast, myAnimal does not contain the
+			  actual data for that object. It contains a reference or address to where that object in heap
+			  memory is located.
+			  
+			- If we were to assign again myAnimal = new Animal(), another Animal object will be created in heap
+			  and now myAnimal will contain the address to where that new Animal object is stored. The old 
+			  Animal object is now abandoned and we have lost track of where that object is. It will now be 
+			  dealt with by the garbage collector.
+			  
+			- Garbage collection is a process that runs in the heap and looks for stray objects that don't have
+			  any relationships to them and then eliminates them to clear the space in memory.
+			  
+
+What is an instance variable?
+
+	- Quite simply, it's a variable that belongs to a particular instance.
+	
+	- A class with variables in it, these variables are instance variables. When we create an instance of that
+	  class, we can modify the state of the class by modifying the variables. Recall objects and how we can 
+	  change variable values depending on the object that we are creating.
+	  
+	- As an example, if we have a class Animal, we know that all animals have a name, weight, and height. These
+	  three variables will be instance variables so that when we create our Animals objects, each instance of the
+	  Animal class will have its own separate name, weight, and height instances.
+	  
+	- All instance variables will have their own memory slot on the heap within the object itself for every single
+	  object.
+	  
+	- Instance variables are used to maintain the state of a particular object instance. For example, all Animal
+	  objects will have the same instance variables, but they can have different values stored in those instance
+	  variables.
+	  

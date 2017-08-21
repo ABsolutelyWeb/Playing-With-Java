@@ -1,0 +1,82 @@
+What is a computer program?
+
+	- A step by step set of instructions a computer must take to solve a particular problem.
+	
+	- This "step by step" instruction is known as an algorithm.
+	
+	
+	
+What is linear time?
+
+	- If an algorithm does x number of operations where x represents the size of the input, then 
+	  that algorithm is said to run at linear time. As the input size increases, so does the number
+	  of operations.
+	  
+	- Most algorithms that run through an array once are typically linear in time.
+	
+	- Linear time is considered efficient / acceptable.
+	
+	
+	
+What is constant time?
+
+	- Regardless of the size of input, the algorithm will always conduct the same number of operations.
+	  In other words, input size does not affect the number of operations that the algorithm will have
+	  to conduct. Such an algorithm is said to run in constant time.
+	
+	
+	  
+What is quadratic time?
+
+	- When we have a for loop inside a for loop (nested loops), our runtime increases quadratically. The 
+	  input size quadratically increases the number of operations to be done by an algorithm. In other 
+	  words, the number of operations / iterations to be done is equal to the size of the input squared.
+	  
+	- Say we are looping through 2 arrays each of size 10. If we are looping through each in nested loops, 
+	  10 x 10 is 100 so our algorithm is running 100 iterations. This is not too bad, but if our arrays are
+	  significantly larger, then there will be noticeable performance impacts.
+	  
+	- Not very scalable. The larger the input size, the significantly slower it will be.
+	
+	
+	
+What is growth rate?
+
+	- Growth rate describes how an algorithm scales as the input size increases. Single loops are generally
+	  linear growth algorithms while nested for loops are quadratic growth algorithms.
+	  
+	  
+	  
+What symbols are used to communicate the efficiency of algorithms (growth rate) across all human languages?
+
+	- Asymptotic Notation
+	
+	- For an algorithm that scales linearly, we write: O(n) or Big O of n
+	
+	- For an algorithm that scales quadratically, we write: O(n^2) or Big O of n squared
+	
+	- For an algorithm that scales in constant time, we write: O(1) or Big O of 1
+	
+	
+	CHALLENGE: 
+	
+	- What is the runtime for the following:
+	
+		for (...) {
+			for (...) {}
+				for (...) {}		
+		}
+		
+		SOLUTION: O(n^3) or big O of n cubed
+		
+		
+	- For an algorithm that scales exponentially and runs an infinite number of operations without being able
+      to find a solution, we write: O(n^n) or Big O of n^n	
+	  
+	
+
+What is algorithm analysis?
+
+	- The process of figuring out how an algorithm scales / performs and how efficient it is.
+	
+	

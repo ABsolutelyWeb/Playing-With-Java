@@ -1,0 +1,33 @@
+What are data types?
+
+	- A set of values and the set of operations you can run on those values.
+	
+	- We have int, double, float, long, short. We can assign numbers to these data types
+	  and then perform operations with them (e.g. add, subtract, etc.). These are called
+	  "primitive data types" because they are predefined by the Java language as reserved
+	  terms. They are building blocks of the language.
+	  
+	  
+What are abstract data types (ADT)?
+
+	- Data types that can handle far more advanced functionalities.
+	
+	- Created using classes. We can create instances of an ADT and store data in them.
+	
+	- Recall Animal class, creating instances of that Animal class and assigning it its own
+	  data as well as invoking the class's methods.
+	  
+	- An ADT's representation is meant to be hidden from the client that uses it.
+	
+
+	
+CHALLENGE: 
+	
+	Create an ADT called COUNTER which will maintain numeric data. It will be used to keep 
+	track of the current number being advanced. Clients can use this ADT without having to 
+	worry about how it works. 
+	
+	Solution located in 002 Abstract Data Types folder.
+	
+	
+

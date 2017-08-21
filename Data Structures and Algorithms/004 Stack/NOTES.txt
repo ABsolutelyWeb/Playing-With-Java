@@ -1,0 +1,16 @@
+What is a stack?
+
+	- In layman's terms, a stack is a collection of things stacked on top of one another. Can be a stack
+	  of envelopes, paper, tennis balls, etc.
+	  
+
+What is LIFO?
+
+	- Last In First Out. Where we have a stack and we remove / add from the top.
+	
+	- Push and Pop are the primary actions we perform with a stack.
+	
+		- When we add something to a stack, the action is called a "push." 
+		- When we remove something from a stack, the action is called a "pop."
+		
+	- 
