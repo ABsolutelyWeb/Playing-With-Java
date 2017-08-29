@@ -1,0 +1,15 @@
+QUEUE
+
+
+What is a difference between queue and stack?
+
+	- In a stack, the last item that is added is the first item to get addressed.
+		- LIFO: Last In First Out
+	- In a queue, the first item that is added is the first item to get addressed.
+		- First come first serve rule.
+			- FIFO: First In First Out
+		- Fair order.
+	
+		
+
+
